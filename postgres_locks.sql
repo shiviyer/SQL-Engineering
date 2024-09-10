@@ -1,3 +1,6 @@
+## Measures the number of locks held on tables and the waiting time for locks to be released.
+## High lock contention can severely degrade database performance.
+
 SELECT blocked_locks.pid AS blocked_pid,
        blocked_activity.usename AS blocked_user,
        blocking_locks.pid AS blocking_pid
